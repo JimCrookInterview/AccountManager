@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NailedIT Inc. - Ing. Martin Pastor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--Custom styles/scripts-->
+    <script src="js/mainScript.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <!-- Main layout -->
+    <div id="header">
+        <div class="companyLogo">NailedIT Inc.</div>
+    </div>
+    <div id="headerSecondary">
+        <h2 class="center">All Customers of NailedIT Inc.</h2>
+        <p class="right" id="totalBalance">Total balance : (unavailable) </p>
+    </div>
+    <div id="parent">
+        <div id="sidebar">
+            <div class="user center">
+                <div class="userName">Jim</div>
+                <div class="userRole">Account manager</div>
+                <img class="userAvatar" src="images/img_avatar.png">
+                <div class="btnLogout">
+                    <button type="button" class="btn btn-info">Log out</button>
+                </div>
+                <div class="btnLegend">
+                    <button type="button" class="btn btn-default" onclick="ModalTest2()">Legend</button>
+                </div>
+            </div>
+        </div>
+        <!-- Table -->
+        <div class="tablePosition">
+            <table id="customersTable" class="table">
+                <!-- 1st level -->
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th></th>
+                        <th>Customer Information</th>
+                        <th></th>
+                        <th></th>
+                        <th>Company Information</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <!-- 2nd level -->
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Company</th>
+                        <th>E-mail</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                        <th>Registered</th>
+                        <th>Balance</th>
+                        <th>isActive</th>
+                        <th>EventID</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Loading message -->
+    <h3 class="loadingMessage companyColorBlue center">Loading data</h3>
+
+    <!-- Customer details modal -->
+    <div class="modal fade" id="customerDetailsModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header companyColorBlue">
+                    <button type="button" class="close right" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title companyColorYellow">Customer Details</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="balanceModal"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success pull-left" data-dismiss="modal">Send Request</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Legend Modal -->
+    <div class="modal fade" id="legendModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header companyColorBlue">
+                    <button type="button" class="close right" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title companyColorYellow">Legend</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="offline"> Gray color represents inactive users for longer than 12 months. </div>
+                    <div class="negative"> Red color represents users with negative balance. </div>
+                    <div class="normal"> White color represents users without problems, which doesnt require currently any action.</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

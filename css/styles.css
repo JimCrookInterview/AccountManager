@@ -1,0 +1,144 @@
+
+/* Table */
+.negative {
+    background: #dfbab9;
+    line-height: 80px;
+}
+
+.offline {
+    background: #d2d2d2;
+    line-height: 80px;
+}
+
+.normal {
+    line-height: 80px;
+}
+
+#customersTable td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#customersTable th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.loadingMessage {
+    color: yellow;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    position: relative;
+    left: 50%;
+}
+
+/* Page layout */
+#header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 15rem;
+    z-index: 1;
+    background: #007bff;
+}
+
+#headerSecondary {
+    position: fixed;
+    top: 15rem;
+    left: 20rem;
+    right: 0px;
+    height: 10rem;
+    z-index: 1;
+    background: #f2f2f2;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 20rem;
+    background: #333;
+}
+
+#parent {
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+button {
+    min-width: 120px;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#totalBalance {
+    padding-right: 5rem;
+    font-size: 2.5rem;
+}
+
+.tablePosition {
+    padding: 21rem 1rem 5rem 1rem;
+}
+
+.btnLogout {
+    padding-top: 15rem;
+}
+
+.btnLegend {
+    padding-top: 3rem;
+}
+
+
+/* User */
+.user {
+    padding-top: 30rem;
+    color: yellow;
+}
+
+.userAvatar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10rem;
+    padding-top: 3rem;
+    border-radius: 50%;
+}
+
+.userName {
+    font-size: 1.8rem;
+}
+
+.userRole {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+
+/* Company custom colors */
+.companyColorBlue {
+    background: #007bff;
+}
+
+.companyColorYellow {
+    color: yellow;
+}
+
+.companyLogo {
+    font-weight: bold;
+    font-size: 7rem;
+    color: yellow;
+    padding-left: 25rem;
+    line-height: 15rem;
+}
